@@ -1,0 +1,1162 @@
+PROJECT: PRIME DIAGNOSTIC CENTRE
+
+Premium Diagnostic Laboratory & Home Sample Collection Application
+
+Act as a senior full-stack software engineer, UI/UX designer, healthcare application architect, database engineer, security engineer, and medical laboratory information specialist.
+
+Build a complete, premium-quality, production-oriented diagnostic laboratory application named:
+
+PRIME DIAGNOSTIC CENTRE
+
+This application belongs to a diagnostic laboratory located at:
+
+Shop No. 4, Building No. 40, Nehru Nagar, Kurla East, Mumbai, Maharashtra, India.
+
+Laboratory contact numbers:
+
+- Primary: 7208627822
+- Secondary: 7208088515
+
+The application must be accessible to everyone, including patients who speak Hindi or English and users who are not technically experienced.
+
+Do not create just a static website, landing page, or UI prototype. Build a functional application with working navigation, test search, test information, patient registration, home visit booking, prescription uploads, secure data storage, and a protected administrator dashboard.
+
+If an external service, API key, database, or deployment configuration is required, identify it clearly and provide the necessary integration steps. Never pretend that an unconnected feature is operational.
+
+==================================================
+
+1. BRAND IDENTITY AND PREMIUM DESIGN
+   ==================================================
+
+Application name:
+PRIME DIAGNOSTIC CENTRE
+
+Brand tagline:
+"Your Health, Our Priority"
+
+Hindi tagline:
+"आपकी सेहत, हमारी प्राथमिकता"
+
+Create a premium healthcare design that looks trustworthy, modern, clean, professional, and suitable for a reputable diagnostic centre in Mumbai.
+
+Design requirements:
+
+- Premium navy blue, white, and teal colour palette.
+- Elegant typography and clear text hierarchy.
+- Professional medical icons.
+- Clean cards with subtle shadows.
+- Smooth transitions and subtle animations.
+- Rounded buttons and accessible form controls.
+- Mobile-first responsive layout.
+- Desktop, tablet, and Android mobile compatibility.
+- Professional logo featuring a medical cross or diagnostic laboratory symbol.
+- Use a modern, high-quality healthcare dashboard design.
+- Avoid excessive animations, clutter, and unnecessary gradients.
+- Support Hindi and English text properly.
+- Use readable font sizes for elderly patients.
+- Include clear loading states, success messages, error messages, and empty states.
+
+The design must look like a premium healthcare product rather than a basic student project.
+
+Create a professional text-based logo if no official logo image is provided. Allow the administrator to replace it later.
+
+==================================================
+2. LANGUAGE SYSTEM
+
+Provide two languages:
+
+1. English
+2. हिंदी
+
+Add a visible language selector in the header.
+
+The selected language must be applied consistently across:
+
+- Home page.
+- Test catalogue.
+- Test descriptions.
+- Fasting instructions.
+- Patient registration.
+- Booking forms.
+- Validation messages.
+- Booking confirmation.
+- Contact page.
+- Privacy policy.
+- Help and FAQ.
+- Admin dashboard, where applicable.
+
+Provide a Hindi explanation for medical terms wherever practical.
+
+Use simple, understandable Hindi rather than unnecessarily technical language.
+
+For example:
+
+Fasting Required:
+"क्या इस टेस्ट के लिए खाली पेट रहना जरूरी है?"
+
+Purpose:
+"यह टेस्ट क्यों किया जाता है?"
+
+Preparation:
+"टेस्ट कराने से पहले क्या सावधानी रखनी चाहिए?"
+
+Do not translate medical test names so aggressively that their scientific meaning becomes incorrect.
+
+==================================================
+3. HOME PAGE
+
+Create an elegant home page with the following sections:
+
+A. Header:
+
+- Prime Diagnostic Centre logo.
+- Home.
+- All Tests.
+- Test Preparation.
+- Book Home Visit.
+- About Us.
+- Contact Us.
+- Hindi/English language selector.
+- Prominent Book a Home Visit button.
+
+B. Hero section:
+
+English heading:
+"Quality Diagnostics, Care at Your Doorstep"
+
+Hindi heading:
+"विश्वसनीय जांच, आपके घर तक"
+
+Description:
+Explore diagnostic tests, understand test preparation requirements, and request home sample collection from Prime Diagnostic Centre.
+
+Hindi description:
+जांच की जानकारी प्राप्त करें, टेस्ट की तैयारी समझें और Prime Diagnostic Centre से घर पर सैंपल कलेक्शन के लिए अनुरोध करें।
+
+Buttons:
+
+- Explore All Tests.
+- Book Home Visit.
+- Call Laboratory.
+
+C. Service categories:
+
+- Blood Tests.
+- Full Body Health Checkups.
+- Urine Tests.
+- Stool Tests.
+- Sputum Tests.
+- Semen Analysis.
+- X-Ray Services.
+- Biochemistry.
+- Haematology.
+- Clinical Pathology.
+- Immunology.
+- Serology.
+- Microbiology.
+- Hormone Tests.
+- Allergy Testing.
+- Cardiac Markers.
+- Diabetes Testing.
+- Kidney Function Tests.
+- Liver Function Tests.
+- Preventive Health Screening.
+
+Show only services actually offered by the laboratory. Allow the administrator to enable or disable individual services.
+
+Important: X-ray appointments and semen sample appointments may require separate preparation, equipment, facilities, or scheduling. Do not automatically treat all services as home blood collection services.
+
+D. Additional sections:
+
+- Popular Tests.
+- Health Checkup Categories.
+- Why Choose Us.
+- How Home Collection Works.
+- Frequently Asked Questions.
+- Contact Information.
+- Privacy and Security.
+- Footer with laboratory address and contact numbers.
+
+Do not show test prices, package prices, discounts, payment amounts, or estimated charges anywhere in the public application.
+
+==================================================
+4. MASTER DIAGNOSTIC TEST DATABASE
+
+Create a structured diagnostic test information system containing at least 2,500 distinct test entries, with the architecture capable of supporting 3,000 or more entries.
+
+This requirement is mandatory for the catalogue architecture.
+
+Do not generate 2,500 copies of the same test with slightly different names.
+
+Do not create fake tests merely to meet the count.
+
+Use a structured database with categories, searchable names, synonyms, clinical purpose, preparation requirements, specimen information, and other relevant fields.
+
+Use a combination of:
+
+- A verified seed catalogue.
+- Authoritative medical laboratory test references.
+- Structured, validated test records.
+- An administrator-controlled catalogue import system.
+- A scalable database that can grow beyond 3,000 tests.
+
+If a verified database containing 3,000 distinct records is not available during initial generation, clearly indicate the number of verified records actually imported. Never claim that 3,000 records are available if they have not been created and validated.
+
+Provide CSV and JSON import support for adding large numbers of test records.
+
+Each test record should contain the following fields:
+
+1. Unique test ID.
+2. Standard test name.
+3. Commonly used alternative names.
+4. Hindi test name or Hindi explanation.
+5. English description.
+6. Hindi description.
+7. Main medical category.
+8. Subcategory.
+9. What the test measures.
+10. Why the test is performed.
+11. What conditions it may help evaluate.
+12. Required specimen type.
+13. Sample collection method.
+14. Whether fasting is required.
+15. Whether fasting is optional.
+16. Whether fasting depends on the doctor's instructions.
+17. Recommended fasting duration, when applicable and verified.
+18. Whether water is generally permitted during fasting.
+19. Preparation instructions.
+20. Medication-related precautions.
+21. Exercise or lifestyle precautions, if relevant.
+22. Special instructions for women or children, where relevant.
+23. Approximate laboratory processing time, only if verified and useful.
+24. Whether home sample collection is available.
+25. Whether a special collection container is required.
+26. Whether a special collection appointment is required.
+27. Whether the test requires a doctor’s prescription or other authorization.
+28. Clinical interpretation disclaimer.
+29. Source or reference used to verify the information.
+30. Last medical information review date.
+31. Whether the laboratory currently offers the test.
+32. Whether the test is active or inactive in the public catalogue.
+
+Never include a price field in the public API response or public user interface.
+
+The internal system must not accidentally expose confidential business information.
+
+Do not fabricate test names, clinical indications, fasting instructions, specimen requirements, or medical references.
+
+Where reliable information is unavailable, display:
+"Preparation requirements may vary. Please confirm with the laboratory or your healthcare professional."
+
+Hindi:
+"टेस्ट की तैयारी संबंधी निर्देश अलग-अलग हो सकते हैं। कृपया लैब या अपने डॉक्टर से पुष्टि करें।"
+
+==================================================
+5. TEST CATEGORIES
+
+Create a comprehensive, searchable category structure covering the following areas.
+
+A. HAEMATOLOGY
+
+- Complete Blood Count.
+- Haemoglobin.
+- RBC Count.
+- WBC Count.
+- Platelet Count.
+- Peripheral Blood Smear.
+- ESR.
+- Reticulocyte Count.
+- Coagulation Studies.
+- PT/INR.
+- APTT.
+- D-Dimer.
+- Specialised Haematology Investigations.
+
+B. CLINICAL BIOCHEMISTRY
+
+- Blood Glucose.
+- Fasting Blood Glucose.
+- Postprandial Blood Glucose.
+- HbA1c.
+- Liver Function Tests.
+- Kidney Function Tests.
+- Electrolytes.
+- Calcium.
+- Phosphorus.
+- Uric Acid.
+- Lipid Profile.
+- Cardiac Biomarkers.
+- Pancreatic Enzymes.
+- Vitamins.
+- Trace Elements.
+- Specialised Metabolic Tests.
+
+C. HORMONES AND ENDOCRINOLOGY
+
+- Thyroid Function Tests.
+- TSH.
+- T3 and T4.
+- Free T3 and Free T4.
+- Reproductive Hormones.
+- Testosterone.
+- Oestradiol.
+- Progesterone.
+- Prolactin.
+- LH.
+- FSH.
+- Cortisol.
+- ACTH.
+- Growth Hormone.
+- Insulin.
+- C-Peptide.
+- Specialised Endocrinology Tests.
+
+D. IMMUNOLOGY AND SEROLOGY
+
+- Autoimmune Investigations.
+- Rheumatoid Factor.
+- Anti-CCP.
+- ANA.
+- ANCA.
+- Complement Studies.
+- Immunoglobulins.
+- Selected Infectious Disease Antibodies.
+- Other Validated Immunological Investigations.
+
+E. MICROBIOLOGY
+
+- Bacterial Culture.
+- Urine Culture.
+- Blood Culture.
+- Sputum Culture.
+- Pus Culture.
+- Swab Culture.
+- Antibiotic Susceptibility Testing.
+- Validated Fungal Investigations.
+- Validated Parasitology Investigations.
+- Specialised Microbiology Tests.
+
+F. CLINICAL PATHOLOGY
+
+- Urine Routine Examination.
+- Urine Microscopy.
+- Urine Protein.
+- Urine Albumin.
+- Urine Albumin-to-Creatinine Ratio.
+- Urine Culture.
+- Stool Routine Examination.
+- Stool Occult Blood.
+- Stool Culture.
+- Stool Parasite Investigations.
+- Semen Analysis.
+- Other validated body-fluid examinations.
+
+G. MOLECULAR DIAGNOSTICS
+
+- PCR-based tests.
+- RT-PCR-based tests.
+- Validated pathogen detection assays.
+- Validated genetic investigations.
+- Other specialised molecular diagnostic procedures.
+
+Only include medically legitimate tests and clearly distinguish tests available at this laboratory from tests available only through a verified reference laboratory.
+
+H. INFECTIOUS DISEASE TESTING
+Include legitimate investigations for bacterial, viral, fungal, and parasitic infections.
+
+Provide appropriate warnings that screening tests and confirmatory tests are not always interchangeable.
+
+I. VITAMINS AND NUTRITION
+
+- Vitamin B12.
+- Vitamin D.
+- Folate.
+- Iron Studies.
+- Ferritin.
+- Other validated nutritional investigations.
+
+J. CARDIAC AND METABOLIC TESTING
+
+- Troponin.
+- CK-MB.
+- Lipid Profile.
+- Glucose Tests.
+- HbA1c.
+- Other validated cardiac and metabolic investigations.
+
+K. RENAL AND HEPATIC TESTING
+Include routine and specialised kidney and liver investigations.
+
+L. ALLERGY TESTING
+Include validated allergy investigations and explain that results require clinical interpretation.
+
+M. CANCER-RELATED MARKERS
+Include medically recognised tumour markers where appropriate.
+
+Clearly explain that tumour markers alone cannot diagnose or exclude cancer.
+
+N. SPECIALISED TESTS
+Include legitimate toxicology, therapeutic drug monitoring, genetic, autoimmune, reproductive, and other specialised investigations where reliable references are available.
+
+O. FULL BODY HEALTH CHECKUPS
+Create configurable health checkup categories such as:
+
+- Basic Health Screening.
+- General Wellness Screening.
+- Diabetes Screening.
+- Heart Health Screening.
+- Kidney Health Screening.
+- Liver Health Screening.
+- Thyroid Screening.
+- Senior Citizen Screening.
+- Women's Health Screening.
+- Men's Health Screening.
+
+These must be configurable collections of actual laboratory tests, not invented diagnostic procedures.
+
+Do not show any package price.
+
+Do not imply that one package is suitable for every patient. Explain that test selection should be appropriate to age, symptoms, history, and medical advice.
+
+==================================================
+6. FASTING AND TEST PREPARATION INFORMATION
+
+Create a dedicated section named:
+
+"Test Preparation Guide"
+
+Hindi:
+"टेस्ट से पहले की तैयारी"
+
+Patients must be able to search for a test and immediately understand whether fasting is required.
+
+Use these preparation labels:
+
+- Fasting Usually Required.
+- Fasting Usually Not Required.
+- Fasting Depends on the Test or Doctor's Instructions.
+- Preparation Must Be Confirmed.
+- Special Collection Instructions Required.
+
+Show these details on each applicable test page:
+
+1. Is fasting required?
+2. If required, what duration has been verified?
+3. Can the patient drink plain water?
+4. Should the patient avoid food?
+5. Are there any medication-related precautions?
+6. Is a morning sample preferred?
+7. Is a timed sample necessary?
+8. Are there special urine collection instructions?
+9. Are there special stool collection instructions?
+10. Are there special semen collection instructions?
+11. Does the test require a doctor's prescription?
+12. Does the test need prior confirmation with the laboratory?
+
+Important medical safety rules:
+
+- Never claim that every blood test requires fasting.
+- Never instruct patients to stop prescribed medication without medical advice.
+- Do not recommend stopping insulin or other diabetes medication independently.
+- Explain that fasting requirements depend on the specific test and clinical circumstances.
+- For glucose tests, clearly distinguish fasting glucose from random and post-meal glucose tests.
+- Explain that fasting duration should follow verified test-specific instructions.
+- Water consumption guidance must be accurate and test-specific.
+- Include pregnancy-related and paediatric preparation cautions when relevant.
+- For timed hormone tests, clearly explain that collection timing may matter.
+- For semen analysis, explain that abstinence duration and collection instructions must follow the laboratory's validated protocol.
+- For urine and stool testing, provide the appropriate collection-container and handling instructions.
+- For X-ray services, provide only verified instructions and advise patients to disclose pregnancy possibility where relevant.
+
+Never replace professional medical advice with automatically generated instructions.
+
+==================================================
+7. TEST SEARCH ENGINE
+
+Create a fast, intelligent test search system.
+
+Patients must be able to search by:
+
+- Full test name.
+- Partial test name.
+- Common abbreviation.
+- Alternative name.
+- Hindi name.
+- English name.
+- Medical category.
+- Reason for testing.
+- Sample type.
+- Fasting requirement.
+
+Examples:
+
+- CBC.
+- Complete Blood Count.
+- HbA1c.
+- Thyroid.
+- TSH.
+- Sugar Test.
+- Blood Sugar.
+- पेशाब की जांच.
+- खून की जांच.
+- पेशाब में प्रोटीन.
+- Vitamin D.
+- Kidney Function.
+- Liver Function.
+
+Support spelling variations and common search synonyms without changing the underlying medical meaning.
+
+Add filters for:
+
+- Test category.
+- Specimen type.
+- Fasting requirement.
+- Home collection availability.
+- Available at this laboratory.
+
+Each search result should show:
+
+- Test name.
+- Short explanation.
+- Fasting status.
+- Sample type.
+- View Details button.
+- Book Home Visit button, when applicable.
+
+Never show prices.
+
+==================================================
+8. PATIENT REGISTRATION
+
+Create a patient-friendly registration and booking form.
+
+Required fields:
+
+1. Patient full name.
+2. Mobile number.
+3. Age or date of birth.
+4. Gender, with appropriate inclusive options.
+5. Complete residential address.
+6. Area or locality.
+7. PIN code.
+8. Doctor's name.
+9. Selected test or tests.
+10. Prescription photo upload, where available.
+11. Preferred home visit date.
+12. Preferred time slot.
+13. Additional instructions, optional.
+14. Consent to the privacy policy.
+15. Consent to collection and processing of necessary health information.
+
+Provide appropriate input validation.
+
+Mobile number:
+
+- Accept valid Indian mobile numbers.
+- Normalize and validate numbers on the server.
+- Do not assume that entering a number verifies ownership.
+
+For bookings involving minors, collect the necessary parent or guardian details.
+
+Provide an option for a patient to book without creating a permanent password-based account, if secure booking verification is implemented.
+
+For repeat bookings, provide an optional secure account system.
+
+Never expose a patient's full address, mobile number, prescription, or health information in a public page, URL, browser log, analytics event, or search result.
+
+==================================================
+9. PRESCRIPTION PHOTO UPLOAD
+
+Allow patients to upload a photograph or scan of a doctor's prescription.
+
+Supported formats:
+
+- JPG.
+- JPEG.
+- PNG.
+- PDF, if enabled by the backend.
+
+Requirements:
+
+- Show a preview before submission.
+- Allow the patient to replace the uploaded file.
+- Enforce configurable file-size limits.
+- Validate actual file content, not just filename extensions.
+- Store files in private object storage.
+- Use short-lived signed download URLs for authorised staff.
+- Do not make prescription files publicly accessible.
+- Do not expose permanent storage URLs.
+- Scan uploads for malware where supported.
+- Restrict file access to authorised staff.
+- Keep audit logs for access to sensitive documents.
+- Apply configurable retention and deletion policies.
+
+Do not automatically diagnose patients by interpreting prescription images.
+
+If text extraction or OCR is implemented, treat the extracted text as unverified and allow authorised staff to review it.
+
+==================================================
+10. HOME SAMPLE COLLECTION BOOKING
+
+Create a premium booking workflow titled:
+
+"Book a Home Sample Collection"
+
+Hindi:
+"घर पर सैंपल कलेक्शन बुक करें"
+
+Workflow:
+
+Step 1: Select test or tests.
+
+Step 2: Enter patient information.
+
+Step 3: Enter the complete home address.
+
+Step 4: Enter the doctor's name.
+
+Step 5: Upload the prescription if available or required.
+
+Step 6: Select the preferred date.
+
+Step 7: Select an available time slot.
+
+Step 8: Review the information.
+
+Step 9: Accept the privacy policy and submit the request.
+
+Step 10: Generate a unique booking reference.
+
+Show a confirmation screen containing:
+
+- Booking reference.
+- Patient name.
+- Selected tests.
+- Requested visit date.
+- Requested time slot.
+- Booking status.
+- Laboratory contact numbers.
+- Instructions for contacting the laboratory.
+
+Do not display prices.
+
+Do not promise a visit until the booking is accepted or confirmed by authorised laboratory staff.
+
+Booking statuses:
+
+- New Request.
+- Pending Review.
+- Confirmed.
+- Assigned.
+- Sample Collected.
+- Completed.
+- Cancelled.
+- Unable to Fulfil.
+
+The admin must be able to:
+
+- Accept a booking.
+- Reject a booking with an appropriate reason.
+- Request clarification.
+- Change the appointment slot.
+- Assign an authorised phlebotomist.
+- Update the booking status.
+- Contact the patient.
+- Record whether a prescription was received.
+- Add internal notes.
+- View an audit trail.
+
+Only show actual available slots if a real scheduling system is connected.
+
+Prevent double booking by checking availability on the server.
+
+Allow cancellation or rescheduling according to laboratory policy.
+
+If live slot availability is not configured, describe the selected date and time as a request rather than a confirmed appointment.
+
+==================================================
+11. IMPORTANT: NO TEST PRICES
+
+No public page must display any test price.
+
+This includes:
+
+- Individual tests.
+- Full body checkups.
+- Packages.
+- Search results.
+- Test details.
+- Booking forms.
+- Confirmation pages.
+- Public APIs.
+- Public JSON responses.
+- Downloadable public catalogues.
+
+Do not show:
+
+- Rupee symbols.
+- Price lists.
+- Estimated charges.
+- Discounts.
+- Promotional offers containing monetary amounts.
+- Hidden or partially obscured prices.
+
+Do not generate dummy prices.
+
+The application should not require patients to enter payment information unless a future authorised feature is deliberately introduced.
+
+==================================================
+12. IMPORTANT: NO REPORT COLLECTION TIME
+
+Do not display any fixed report collection time, report pickup schedule, or report collection hours anywhere in the public application.
+
+Do not create a report collection timing section.
+
+Do not show statements such as:
+"Reports available for collection between 5 PM and 7 PM."
+
+If a patient asks about report availability, show:
+
+English:
+"For report-related assistance, please contact Prime Diagnostic Centre directly."
+
+Hindi:
+"रिपोर्ट से संबंधित जानकारी के लिए कृपया Prime Diagnostic Centre से सीधे संपर्क करें।"
+
+Do not invent turnaround times or report delivery promises.
+
+==================================================
+13. CONTACT US
+
+Display the laboratory information clearly.
+
+PRIME DIAGNOSTIC CENTRE
+
+Address:
+Shop No. 4, Building No. 40,
+Nehru Nagar, Kurla East,
+Mumbai, Maharashtra, India.
+
+Primary contact:
+7208627822
+
+Secondary contact:
+7208088515
+
+Add functional call buttons using the appropriate telephone links.
+
+Add a WhatsApp contact button if the number is configured and the WhatsApp integration is verified.
+
+Do not claim that a WhatsApp account exists unless it has been configured.
+
+Add a map section only after verifying the correct location. Do not invent coordinates or display an unrelated map marker.
+
+Show a contact form that sends messages to a secure backend.
+
+Never expose internal administrator email addresses or credentials.
+
+==================================================
+14. SECURE ADMINISTRATOR DASHBOARD
+
+Create a separate, protected administrator interface.
+
+Suggested route:
+/admin
+
+This route must not provide access merely because a visitor knows the URL.
+
+Implement secure authentication using a trusted identity provider or equivalent server-side authentication.
+
+Use role-based access control.
+
+Roles may include:
+
+1. Super Administrator.
+2. Laboratory Administrator.
+3. Authorised Booking Staff.
+4. Phlebotomist, if applicable.
+5. Catalogue Manager.
+
+The initial owner must be able to configure authorised administrator accounts securely.
+
+Never hardcode an admin password in frontend code.
+
+Never use a public environment variable for secret credentials.
+
+Do not grant administrator access to newly registered patients.
+
+ADMIN DASHBOARD FEATURES:
+
+A. Booking Management:
+
+- View incoming booking requests.
+- Search bookings by booking reference.
+- Review patient details.
+- View the patient's address and phone number when authorised.
+- Review prescription uploads.
+- Confirm or reject requests.
+- Manage appointment slots.
+- Assign staff.
+- Update booking statuses.
+- Add internal notes.
+- Export authorised records securely when necessary.
+
+B. Test Catalogue Management:
+
+- Add a new test.
+- Edit test information.
+- Activate or deactivate a test.
+- Add Hindi and English descriptions.
+- Update fasting instructions.
+- Add verified references.
+- Import CSV and JSON files.
+- Detect duplicate test records.
+- Review unpublished test information.
+- Track the date and author of changes.
+
+C. Service Management:
+
+- Enable or disable home sample collection.
+- Manage laboratory service categories.
+- Manage service availability.
+- Configure supported booking time slots.
+- Configure service areas.
+
+D. User and Staff Management:
+
+- Add authorised staff.
+- Disable accounts.
+- Change roles.
+- Revoke access.
+- Review access logs.
+
+E. Privacy and Security:
+
+- View security audit logs.
+- Review failed login attempts.
+- Review access to patient records.
+- Configure data retention.
+- Manage consent records.
+- Export records only when authorised.
+- Delete records according to applicable legal obligations and retention policies.
+
+F. Dashboard Statistics:
+
+- Total bookings.
+- New requests.
+- Confirmed visits.
+- Cancelled visits.
+- Test catalogue record count.
+- Pending administrative tasks.
+
+Statistics must be generated from real database records.
+
+Never expose patient information in public dashboard previews or unauthenticated endpoints.
+
+==================================================
+15. CRITICAL PATIENT PRIVACY
+
+Patient names, mobile numbers, residential addresses, prescription images, and health-related information are confidential.
+
+The requirement is:
+
+"Only authorised administrators and specifically authorised staff may access patient personal information."
+
+Implement the following controls:
+
+1. Server-side authentication.
+2. Server-side role-based authorisation.
+3. Database access policies.
+4. Private file storage.
+5. HTTPS-only deployment.
+6. Secure session handling.
+7. Input validation.
+8. Protection against SQL injection and common web vulnerabilities.
+9. Rate limiting on sensitive endpoints.
+10. Protection against unauthorised booking enumeration.
+11. Audit logging.
+12. Secure backup policies.
+13. Data minimisation.
+14. Configurable retention periods.
+15. Secure account recovery.
+16. Protection against unauthorised CSV exports.
+17. Restricted access to prescription documents.
+18. No sensitive patient data in analytics.
+19. No patient information in public URLs.
+20. No patient information in frontend console logs.
+21. No unrestricted database access from the browser.
+22. No exposure of secret API keys.
+
+Do not rely on hiding buttons or hiding pages as the only security mechanism.
+
+Enforce access restrictions at the database and server levels.
+
+A patient's address and mobile number must never be visible to other patients.
+
+Public booking confirmation pages must not reveal sensitive patient information.
+
+Use unpredictable booking references and require appropriate verification before revealing booking details.
+
+Provide privacy-policy and consent interfaces.
+
+Design the application to support applicable Indian privacy and data-protection requirements, including the Digital Personal Data Protection Act, 2023, and applicable rules and commencement provisions.
+
+Do not claim legal compliance without a proper review of the deployed system and its actual operating practices.
+
+==================================================
+16. DATABASE ARCHITECTURE
+
+Use a production-suitable backend.
+
+Preferred option:
+
+- React with TypeScript for the frontend.
+- A secure backend API.
+- Supabase or an equivalent managed PostgreSQL database.
+- Supabase Auth or another trusted identity provider.
+- Private object storage for prescription images.
+- Row Level Security where supported.
+- Server-side functions for sensitive operations.
+
+If Supabase is used, configure:
+
+- Database tables.
+- Foreign keys.
+- Indexes.
+- Row Level Security.
+- Private storage buckets.
+- Storage access policies.
+- Authentication.
+- Server-side functions.
+- Database migrations.
+- Environment variables.
+
+Suggested tables:
+
+1. tests
+2. test_categories
+3. test_synonyms
+4. test_preparation_guides
+5. test_references
+6. health_checkup_packages
+7. package_test_items
+8. patients
+9. bookings
+10. booking_tests
+11. prescription_documents
+12. appointment_slots
+13. staff_profiles
+14. user_roles
+15. booking_status_history
+16. consent_records
+17. audit_logs
+18. catalogue_import_jobs
+19. laboratory_services
+20. privacy_requests
+
+Use UUID identifiers where appropriate.
+
+Store timestamps consistently.
+
+Apply least-privilege permissions.
+
+Do not allow unauthenticated users to read all patients, bookings, addresses, phone numbers, or prescription files.
+
+Public test catalogue access should be limited to published and active fields.
+
+Never expose privileged database credentials in browser code.
+
+If a booking form requires storing personal information before the patient creates an account, use a carefully restricted server-side booking endpoint.
+
+Do not disable Row Level Security to make the application easier to build.
+
+==================================================
+17. MEDICAL INFORMATION QUALITY
+
+The app is intended for laboratory education, test preparation, and appointment booking.
+
+It is not intended to replace a doctor.
+
+Use trustworthy references such as:
+
+- Official government health authorities.
+- Recognised clinical laboratory organisations.
+- Verified laboratory test catalogues.
+- Established medical institutions.
+- Peer-reviewed medical references where appropriate.
+
+Store a reference for clinically important preparation guidance.
+
+Do not copy large copyrighted test catalogues without permission.
+
+Do not generate false medical facts to reach the target catalogue size.
+
+Each record must be reviewed or marked as awaiting verification.
+
+Display a clear label when information has not yet been verified.
+
+Provide the following disclaimer in both languages.
+
+English:
+"Information provided by Prime Diagnostic Centre is intended for general educational purposes and test preparation. It does not replace medical advice, diagnosis, or treatment. Test requirements may vary according to individual circumstances. Please consult your doctor or laboratory for test-specific instructions."
+
+Hindi:
+"Prime Diagnostic Centre द्वारा दी गई जानकारी सामान्य जानकारी और जांच की तैयारी के लिए है। यह डॉक्टर की सलाह, निदान या उपचार का विकल्प नहीं है। व्यक्ति की स्थिति के अनुसार टेस्ट की आवश्यकताएं अलग हो सकती हैं। कृपया विशेष निर्देशों के लिए अपने डॉक्टर या लैब से संपर्क करें।"
+
+Urgent symptoms should not be handled as ordinary booking requests. Provide appropriate guidance to seek emergency medical care when necessary.
+
+==================================================
+18. ACCESSIBILITY AND USER EXPERIENCE
+
+Ensure:
+
+- Mobile-first responsive design.
+- Readable Hindi typography.
+- Screen-reader-friendly labels.
+- Keyboard navigation.
+- Accessible colour contrast.
+- Clear error messages.
+- Large touch targets.
+- Low-bandwidth performance.
+- Optimised images.
+- Efficient test search.
+- Pagination or virtualisation for large catalogues.
+- Loading indicators.
+- Retry options for failed uploads.
+- Clear confirmation after booking.
+- Helpful error recovery.
+
+The patient should be able to complete a booking without needing technical knowledge.
+
+Do not require unnecessary registration steps.
+
+==================================================
+19. TECHNICAL IMPLEMENTATION
+
+Create a maintainable project structure.
+
+Include:
+
+- Frontend application.
+- Backend API or server functions.
+- Database schema.
+- Database migrations.
+- Authentication configuration.
+- Access control policies.
+- Secure upload functionality.
+- Test catalogue seed files.
+- CSV/JSON import utility.
+- Form validation.
+- Error handling.
+- Environment variable example file.
+- Setup instructions.
+- Deployment instructions.
+- Automated tests.
+- Security testing guidance.
+
+Use environment variables for configuration.
+
+Provide an .env.example file with placeholders only. Never include real secrets.
+
+Do not expose private API keys.
+
+Do not rely on browser localStorage as the primary storage for confidential patient information.
+
+If a third-party service is required, identify the service and provide its configuration steps.
+
+If the environment cannot complete backend configuration automatically, generate the required code and explain precisely what the owner must configure.
+
+Do not claim that authentication, database storage, prescription uploads, notifications, or booking confirmation work until each feature has been tested against the actual backend.
+
+==================================================
+20. TESTING AND ACCEPTANCE CRITERIA
+
+Before declaring the application complete, verify:
+
+1. The app opens correctly on Android.
+2. Hindi and English switching works.
+3. Test search returns relevant results.
+4. Published tests display accurate preparation information.
+5. Fasting instructions are not fabricated.
+6. No public page displays test prices.
+7. No public page displays report collection times.
+8. Patients can submit a booking request.
+9. Booking records are stored in the configured backend.
+10. Booking references are generated securely.
+11. Prescription uploads are stored privately.
+12. Invalid files are rejected.
+13. Unauthenticated users cannot access the admin dashboard.
+14. Patients cannot read another patient's information.
+15. Authorised staff can access only the records permitted by their roles.
+16. Direct API requests cannot bypass access controls.
+17. Public APIs do not reveal private patient fields.
+18. Double booking is prevented when real scheduling is enabled.
+19. CSV imports validate records and identify duplicates.
+20. The test count reflects actual database records.
+21. No fake medical references are generated.
+22. Contact numbers are displayed correctly.
+23. The application handles errors gracefully.
+24. The privacy policy and consent flows work.
+25. The deployment configuration is documented.
+
+Create automated tests for authentication, database permissions, booking submission, file upload, catalogue search, and privacy controls.
+
+Do not mark an acceptance criterion as passed unless it has actually been tested.
+
+==================================================
+21. FINAL BUILD INSTRUCTIONS
+
+Now build the application in a structured sequence.
+
+PHASE 1:
+Create the premium responsive frontend and bilingual navigation.
+
+PHASE 2:
+Create the test catalogue, categories, search, and preparation-guide pages.
+
+PHASE 3:
+Create the booking workflow and form validation.
+
+PHASE 4:
+Connect the backend database and authentication.
+
+PHASE 5:
+Implement secure prescription uploads.
+
+PHASE 6:
+Create the administrator dashboard and role-based permissions.
+
+PHASE 7:
+Implement catalogue import and duplicate detection.
+
+PHASE 8:
+Test the privacy controls and all booking workflows.
+
+PHASE 9:
+Prepare the deployment instructions and final acceptance checklist.
+
+Generate actual application files and functional code rather than merely explaining what should be built.
+
+If the entire system cannot be completed in one generation, complete one phase at a time, preserve the existing working code, and continue from the last completed phase.
+
+Never replace a working application with a simplified mockup.
+
+The finished product must represent:
+
+PRIME DIAGNOSTIC CENTRE
+Premium Diagnostic Information and Home Sample Collection Platform
+
+Primary contact: 7208627822
+Secondary contact: 7208088515
+
+Address: Shop No. 4, Building No. 40, Nehru Nagar, Kurla East, Mumbai, Maharashtra, India.
+
+No public test prices.
+No public report collection timings.
+Bilingual Hindi and English interface.
+Secure patient information.
+Protected admin dashboard.
+Scalable catalogue for 2,500–3,000+ genuine diagnostic test records.
+Functional home sample collection booking.
+
+Start building the application now.

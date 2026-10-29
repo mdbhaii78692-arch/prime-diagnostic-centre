@@ -1,0 +1,6 @@
+{
+  "name": "Prime Diagnostic Centre",
+  "description": "Premium Diagnostic Laboratory & Home Sample Collection in Nehru Nagar, Kurla East, Mumbai. Quality diagnostics and expert care at your doorstep.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
